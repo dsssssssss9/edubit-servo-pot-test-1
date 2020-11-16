@@ -10,6 +10,6 @@ basic.forever(function () {
 })
 control.inBackground(function () {
     while (true) {
-        basic.showNumber(edubitPotentioBit.readPotValue())
+        basic.showNumber(Math.round(Math.map(edubitPotentioBit.readPotValue(), 3, 1023, 0, 180)))
     }
 })
